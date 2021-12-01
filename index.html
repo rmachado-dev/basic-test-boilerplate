@@ -12,30 +12,95 @@
   </head>
 
   <body>
-    
     <!-- header -->
     <header class="header">
-      
+      <!-- logo -->
       <div class="container">
         <img src="images/icons/logo-white.svg" alt="Greenthumb" class="logo" />
-      </div>      
-      
+      </div>
+
+      <!-- titulo -->
       <div class="container header-title">
         <h1>Find your next green friend</h1>
       </div>
-            
+
+      <!-- seta -->
       <div class="container seta">
-        <a href="#selects">
-          <img src="images/icons/arrow-down.svg" alt="">
+        <a href="#options">
+          <img src="images/icons/arrow-down.svg" alt="imagem" />
         </a>
       </div>
-      
+
+      <!-- backgrounds -->
       <div class="bg-header">
-        <img src="images/hero/desktop/left-leaves.png" alt="" class="responsive">
-        <img src="images/hero/desktop/plantperson.png" alt="" class="responsive">
-        <img src="images/hero/desktop/right-leaves.png" alt="" class="responsive">
+        <img
+          src="images/hero/desktop/left-leaves.png"
+          alt="imagem"
+          class="responsive"
+        />
+        <img
+          src="images/hero/desktop/plantperson.png"
+          alt="imagem"
+          class="responsive"
+        />
+        <img
+          src="images/hero/desktop/right-leaves.png"
+          alt="imagem"
+          class="responsive"
+        />
       </div>
-      
     </header>
+
+	<!-- primeira section  -->
+    <section class="main container" id="options">
+		
+		<!-- sunlight -->
+      <div class="option">
+        <img
+          src="images/illustrations/sun.png"
+          alt="imagem"
+        />
+        <p><strong>1.</strong> Set the amount of <strong>sunlight</strong> your plant will get.</p>
+        <select name="sun" id="sun">
+          <option value="">Select...</option>
+          <option value="no">No</option>
+          <option value="low">Low</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+
+		<!-- water -->
+      <div class="option">
+        <img
+          src="images/illustrations/wateringcan.png"
+          alt="imagem"
+          class="inverter"
+        />
+		  <p><strong>2.</strong> How often do you want to <strong>water</strong> your plant?</p>
+        <select name="water" id="water">
+          <option value="">Select...</option>
+          <option value="regularly">Regularly</option>
+          <option value="daily">Daily </option>
+          <option value="rarely">Rarely</option>
+        </select>
+      </div>
+		
+		
+		<!-- pets -->
+      <div class="option">
+        <img
+          src="images/illustrations/dog.png"
+          alt="imagem"
+        />
+		  <p><strong>3.</strong> Do you have pets? Do they <strong>chew</strong> plants?</p>
+        <select name="pets" id="pets">
+          <option value="">Select...</option>
+          <option value="yes">Yes</option>
+          <option value="no">No </option>
+        </select>
+      </div>
+
+
+    </section>
   </body>
 </html>
