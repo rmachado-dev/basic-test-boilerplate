@@ -34,7 +34,7 @@ function getGreen() {
 
         const filtro = data.filter(function (item) {
           // console.log(item);
-          if ((item.sun == vSun) & (item.water == vWater)) {
+          if ((item.sun == vSun) && (item.water == vWater)) {
             return true;
           } else {
             return false;
@@ -42,34 +42,19 @@ function getGreen() {
         });
 
         const res = filtro.map(function (green) {
-          console.log(green);
+          //  console.log(green);
           // resultado.textContent = green.name
 
-          var divBox = document.createElement("div");
-          var txtBox = document.createTextNode(green.name);
-          divBox.appendChild(txtBox);
           var divResultado = document.getElementById("resultado");
-          document.body.insertBefore(divBox, divResultado);
-        });
+          var titulo = document.createElement("h2");
+          var texto = document.createTextNode(green.name);
+          titulo.appendChild(texto);
+          divResultado.appendChild(titulo);
 
-        // console.log(filtro);
-
-        const filtroSun = data.filter(function (item) {
-          // console.log(item);
-          // if (item.sun == vSun) resultado.textContent = item.name
-          // if (item.sun == vSun & item.water == vWater) {
-          //    resultado.textContent = item.name
-          // } else {
-          //    resultado.textContent = ''
-          // }
+          console.log(divResultado);
         });
       });
-
-      // data.map( lista =>{
-      //    const sol = lista.filter(sol => sol.includes(sun.value));
-      // })
-
-      // resultado.textContent = JSON.stringify(data)
+     
     })
     .catch((error) => console.log(error));
 }
