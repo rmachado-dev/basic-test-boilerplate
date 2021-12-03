@@ -250,3 +250,17 @@ html {
   color: #257556;
   text-align: right;
 }
+
+// https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+
+.grids{
+	display: grid;
+	grid-template-columns: 437px repeat(4, 1fr) ;
+}
+
+.box{
+	border: 1px solid;
+	display: grid;
+	padding: 5%;
+	
+}
