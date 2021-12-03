@@ -118,10 +118,10 @@ html {
   padding-left: 1%;
 }
 
-//setando o box e alinhamento do results
-.results {
+// RESULTADOS - no results
+// setando o box e alinhamento do
+.no-results {
   background-color: #f2f2f2;
-  position: absolute;
   height: 400px;
   width: 100%;
   display: flex;
@@ -130,7 +130,7 @@ html {
 }
 
 // estilo do título dos resultados
-.results h2 {
+.no-results h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 45px;
@@ -140,17 +140,113 @@ html {
 }
 
 // estilo do texto dos resultados
+.no-results p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+  color: #a9a9a9;
+  width: 40%;
+}
+
+// setando espaçamento da imagem em resultados
+.no-results img {
+  margin-left: 50%;
+}
+
+// RESULTADOS - results
+// setando o box e alinhamento do no results
+.results {
+  background-color: #f2f2f2;
+  height: auto;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+// estilo do título dos resultados
+.results h2 {
+  font-style: normal;
+  font-weight: 700;
+  color: #0c261c;
+  margin-bottom: 3%;
+  font-size: 55px;
+  line-height: 67px;
+}
+
+// estilo do texto dos resultados
 .results p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 27px;
-  color: #A9A9A9;
+  color: #a9a9a9;
   width: 40%;
 }
 
 // setando espaçamento da imagem em resultados
-.results img{
-    margin-left: 50%;
+
+// setando o box destaque
+.box-destaque {
+  background-color: #fff;
+  width: 440px;
+  //   height: 510px;
+  border-radius: 5px;
+  padding-top: 2%;
 }
 
+// estilo da tag staff
+.favorite {
+  width: 190px;
+  height: 53px;
+  background: #75bc97;
+  border-radius: 0 50px 50px 0;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.181163);
+  color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+// tamanho das imagens
+.img-section {
+  width: 160px;
+}
+
+.img-destaque {
+  width: 300px;
+  margin: auto;
+  display: block;
+}
+
+.icones{
+	height: 30px;	
+	margin-left: 10px;
+}
+
+// estilo das informações do box
+.info {
+  padding: 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info h3 {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 37px;
+  color: #1e6b4e;
+  width: 190px;
+}
+
+.info h4 {
+  font-size: 24px;
+  line-height: 48px;
+  color: #257556;
+  text-align: right;
+}
