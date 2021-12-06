@@ -187,20 +187,30 @@ html {
 // setando espaçamento da imagem em resultados
 
 // setando o box destaque
-// .box-destaque {
-//   background-color: #fff;
-//   width: auto;
-//   height: auto;
-//   border-radius: 5px;
-//   padding-top: 2%;
-// }
+.box-d{
+  grid-column: 1/3;
+  grid-row: 1/3;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
 
+// setando os boxes
 .box {
   background-color: #fff;
   width: auto;
-  height: auto;
+  // height: 300px;
   border-radius: 5px;
   padding-top: 2%;
+  padding: 7%;
+  display: flex;
+  flex-direction: column;
+}
+
+// cores dos titulos
+.box h3, h4{
+  color: #257556;
 }
 
 // estilo da tag staff
@@ -217,33 +227,76 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 25px;  
+  margin-top: 5%;
 }
 
-// tamanho das imagens
+// tamanhos das imagens
+// imagem da seção
 .img-section {
   width: 160px;
 }
 
+// imagem do box destaque
 .img-destaque {
   width: 300px;
   margin: auto;
   display: block;
 }
 
+// imagem do box
+.img-box {
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+
+// icones do box destaque
+.icones-d{
+	height: 25px;	
+	margin-left: 5px;
+}
+
+// icones do box
 .icones{
 	height: 20px;	
 	margin-left: 5px;
 }
 
+
 // estilo das informações do box
-.info {
+// setando o espaço do info
+.info{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+// nome das plantas
 .info h3 {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 37px;
+  width: 190px;
+}
+
+// preços
+.info h4 {
+  font-size: 24px;
+  line-height: 48px;
+  text-align: right;
+}
+
+// setando info do destaque
+.info-d {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7%;
+}
+
+// nome das plantas do destaque
+.info-d h3 {
   font-weight: bold;
   font-size: 35px;
   line-height: 37px;
@@ -251,30 +304,18 @@ html {
   width: 190px;
 }
 
-.info h4 {
+// preço do destaque
+.info-d h4 {
   font-size: 24px;
   line-height: 48px;
   color: #257556;
   text-align: right;
 }
 
-// https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
-
+// setando o grid
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
-  grid-gap: 30px;
-}
-
-.box-d{
-  // border: 1px solid;
-  // padding: 7%;
-  grid-column: 1/3;
-  grid-row: 1/3;
-}
-
-.box{
-	border: 1px solid;
-	padding: 7%;
+  grid-gap: 40px;
 }
