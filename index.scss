@@ -1,9 +1,9 @@
 // reset e fonte padrão
 * {
-  margin: 0;
-  padding: 0;
+  margin     : 0;
+  padding    : 0;
   font-family: "Montserrat", sans-serif;
-  box-sizing: border-box;
+  box-sizing : border-box;
 }
 
 // scroll suave para a página
@@ -11,18 +11,164 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
+
+// VERSÃO MOBILE ////////////////////////////////
+
+@media (max-width: 425px) {
+  .nomobile {
+    display: none !important;
+  }
+
+  .nodesktop {
+    display: block !important;
+  }
+
+  // regras para o header
+  .header {
+    position        : relative;
+    height          : 730px !important;
+    width           : 100%;
+    background-color: #75bc97;
+  }
+
+  // background do header
+  .bg-header-mobile {
+    display       : flex !important;
+    flex-direction: column;
+  }
+
+  .bg-header {
+    display: none !important;
+  }
+
+  // estilo do título
+  .header-title h1 {
+    font-size  : 40px !important;
+    line-height: 49px !important;
+    width      : 300px !important;
+  }
+
+  .seta {
+    top: 300px !important;
+  }
+
+  #options {
+    display       : flex;
+    flex-direction: column;
+  }
+
+  .option {
+    margin-bottom: 15%;
+  }
+
+  .no-results {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    height        : 100% !important;
+  }
+
+  .no-results h2 {
+    font-size : 40px !important;
+    margin-top: 15% !important;
+  }
+
+  .no-results * {
+    width: 100% !important;
+  }
+
+  .no-results img {
+    width        : auto !important;
+    margin       : auto !important;
+    display      : block;
+    margin-top   : 15% !important;
+    margin-bottom: 15% !important;
+  }
+
+  // setando o grid
+  .grid {
+    overflow-y    : scroll !important;
+    margin-bottom : 50% !important;
+    display       : flex !important;
+    flex-direction: row !important;
+  }
+
+  //setando box
+  .box-d,
+  .box {
+    width: 100% !important;
+  }
+
+  .img-destaque {
+    width: auto !important;
+  }
+
+  .img-box {
+    width: auto !important;
+  }
+
+  // setando info do destaque
+  .info-d {
+    display: block !important;
+  }
+
+  .info-mobile {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : baseline !important;
+  }
+
+  // nome das plantas
+  .info-d h3 {
+    font-size: 20px !important;
+  }
+
+  // preços
+  .info-d h4 {
+    font-size : 20px !important;
+    text-align: left !important;
+  }
+
+  .icones-d {
+    height: 20px !important;
+  }
+
+
+}
+
+///.@media
+
+
+
+
+// VERSÃO DESKTOP ////////////////////////////////
+
+.nodesktop {
+  display: none !important;
+}
+
+.nomobile {
+  display: block !important;
+}
+
 // regras para o header
 .header {
-  position: relative;
-  height: 500px;
-  width: 100%;
+  position        : relative;
+  height          : 500px;
+  width           : 100%;
   background-color: #75bc97;
 }
 
 // background do header
 .bg-header {
-  display: flex;
+  display        : flex;
   justify-content: space-between;
+}
+
+.bg-header-mobile {
+  display: none;
 }
 
 // setando a altura das imagens do header
@@ -33,60 +179,60 @@ html {
 // regra para imagens
 .responsive {
   max-width: 100%;
-  height: auto;
+  height   : auto;
 }
 
 // regras para logo
 .logo {
-  position: absolute;
+  position  : absolute;
   margin-top: 57px;
 }
 
 // posição da seta (âncora)
 .seta {
   position: absolute;
-  top: 400px;
+  top     : 400px;
 }
 
 // regra de espaçamento do container
 .container {
-  padding-left: 15%;
+  padding-left : 15%;
   padding-right: 15%;
 }
 
 // setando o box do título
 .header-title {
-  position: absolute;
-  width: 100%;
-  height: 252px;
+  position  : absolute;
+  width     : 100%;
+  height    : 252px;
   margin-top: 120px;
 }
 
 // estilo do título
 .header-title h1 {
-  position: absolute;
-  font-size: 70px;
+  position   : absolute;
+  font-size  : 70px;
   line-height: 85px;
   font-weight: 700;
-  color: #fff;
-  width: 400px;
+  color      : #fff;
+  width      : 400px;
 }
 
 // setando o box e alinhamento do main
 .main {
-  position: relative;
-  min-height: 300px;
-  display: flex;
+  position       : relative;
+  min-height     : 300px;
+  display        : flex;
   justify-content: space-between;
 }
 
 // setando o box das options
 .option {
   position: relative;
-  width: 220px;
-  height: auto;
-  padding: 5% 0 5% 0;
-  color: #848484;
+  width   : 220px;
+  height  : auto;
+  padding : 5% 0 5% 0;
+  color   : #848484;
 }
 
 // regra das imagens das options
@@ -101,52 +247,52 @@ html {
 
 // estilo do texto das options
 .option p {
-  margin: 10% 0 10%;
-  font-size: 14px;
+  margin     : 10% 0 10%;
+  font-size  : 14px;
   line-height: 22px;
 }
 
 // estilo dos selects das options
 .option select {
-  margin-top: 2%;
-  min-width: 220px;
-  min-height: 40px;
-  border: 1px solid #a8a8a8;
-  box-sizing: border-box;
+  margin-top   : 2%;
+  min-width    : 220px;
+  min-height   : 40px;
+  border       : 1px solid #a8a8a8;
+  box-sizing   : border-box;
   border-radius: 19px;
-  color: #a8a8a8;
-  padding-left: 1%;
+  color        : #a8a8a8;
+  padding-left : 1%;
 }
 
 // RESULTADOS - no results
 // setando o box e alinhamento do
 .no-results {
   background-color: #f2f2f2;
-  height: 400px;
-  width: 100%;
-  display: flex;
-  justify-content: left;
-  padding-top: 5%;
+  height          : 400px;
+  width           : 100%;
+  display         : flex;
+  justify-content : left;
+  padding-top     : 5%;
 }
 
 // estilo do título dos resultados
 .no-results h2 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 55px;
-  color: #a9a9a9;
+  font-style   : normal;
+  font-weight  : 700;
+  font-size    : 45px;
+  line-height  : 55px;
+  color        : #a9a9a9;
   margin-bottom: 3%;
 }
 
 // estilo do texto dos resultados
 .no-results p {
-  font-style: normal;
+  font-style : normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size  : 16px;
   line-height: 27px;
-  color: #a9a9a9;
-  width: 40%;
+  color      : #a9a9a9;
+  width      : 40%;
 }
 
 // setando espaçamento da imagem em resultados
@@ -158,77 +304,78 @@ html {
 // setando o box e alinhamento do no results
 .results {
   background-color: #f2f2f2;
-  height: auto;
-  width: 100%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  height          : auto;
+  width           : 100%;
+  padding-top     : 5%;
+  padding-bottom  : 5%;
 }
 
 // estilo do título dos resultados
 .results h2 {
-  font-style: normal;
-  font-weight: 700;
-  color: #0c261c;
+  font-style   : normal;
+  font-weight  : 700;
+  color        : #0c261c;
   margin-bottom: 3%;
-  font-size: 55px;
-  line-height: 67px;
+  font-size    : 55px;
+  line-height  : 67px;
 }
 
 // estilo do texto dos resultados
 .results p {
-  font-style: normal;
+  font-style : normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size  : 16px;
   line-height: 27px;
-  color: #a9a9a9;
-  width: 40%;
+  color      : #a9a9a9;
+  width      : 40%;
 }
 
 // setando espaçamento da imagem em resultados
 
 // setando o box destaque
-.box-d{
-  grid-column: 1/3;
-  grid-row: 1/3;
+.box-d {
+  grid-column     : 1/3;
+  grid-row        : 1/3;
   background-color: #fff;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
+  border-radius   : 5px;
+  display         : flex;
+  flex-direction  : column;
 }
 
 // setando os boxes
 .box {
   background-color: #fff;
-  width: auto;
+  width           : auto;
   // height: 300px;
-  border-radius: 5px;
-  padding-top: 2%;
-  padding: 7%;
-  display: flex;
-  flex-direction: column;
+  border-radius   : 5px;
+  padding-top     : 2%;
+  padding         : 7%;
+  display         : flex;
+  flex-direction  : column;
 }
 
 // cores dos titulos
-.box h3, h4{
+.box h3,
+h4 {
   color: #257556;
 }
 
 // estilo da tag staff
 .favorite {
-  width: 190px;
-  height: 53px;
-  background: #75bc97;
-  border-radius: 0 50px 50px 0;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.181163);
-  color: #fff;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
+  width          : 190px;
+  height         : 53px;
+  background     : #75bc97;
+  border-radius  : 0 50px 50px 0;
+  box-shadow     : 0px 5px 10px rgba(0, 0, 0, 0.181163);
+  color          : #fff;
+  font-size      : 18px;
+  line-height    : 21px;
+  font-weight    : 700;
+  display        : flex;
+  align-items    : center;
   justify-content: center;
-  margin-bottom: 25px;  
-  margin-top: 5%;
+  margin-bottom  : 25px;
+  margin-top     : 5%;
 }
 
 // tamanhos das imagens
@@ -239,83 +386,103 @@ html {
 
 // imagem do box destaque
 .img-destaque {
-  width: 300px;
-  margin: auto;
+  width  : 300px;
+  margin : auto;
   display: block;
 }
 
 // imagem do box
 .img-box {
-  width: 90%;
-  margin: auto;
+  width  : 90%;
+  margin : auto;
   display: block;
 }
 
 // icones do box destaque
-.icones-d{
-	height: 25px;	
-	margin-left: 5px;
+.icones-d {
+  height     : 25px;
+  margin-left: 5px;
 }
 
 // icones do box
-.icones{
-	height: 20px;	
-	margin-left: 5px;
+.icones {
+  height     : 20px;
+  margin-left: 5px;
 }
 
 
 // estilo das informações do box
 // setando o espaço do info
-.info{
-  display: flex;
+.info {
+  display        : flex;
   justify-content: space-between;
-  align-items: center;
+  align-items    : center;
 }
 
 // nome das plantas
 .info h3 {
   font-weight: bold;
-  font-size: 35px;
+  font-size  : 35px;
   line-height: 37px;
-  width: 190px;
+  width      : 190px;
 }
 
 // preços
 .info h4 {
-  font-size: 24px;
+  font-size  : 24px;
   line-height: 48px;
-  text-align: right;
+  text-align : right;
 }
 
 // setando info do destaque
 .info-d {
-  display: flex;
+  display        : flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 7%;
+  align-items    : center;
+  padding        : 7%;
 }
 
 // nome das plantas do destaque
 .info-d h3 {
   font-weight: bold;
-  font-size: 35px;
+  font-size  : 35px;
   line-height: 37px;
-  color: #1e6b4e;
-  width: 190px;
+  color      : #1e6b4e;
+  width      : 190px;
 }
 
 // preço do destaque
 .info-d h4 {
-  font-size: 24px;
+  font-size  : 24px;
   line-height: 48px;
-  color: #257556;
-  text-align: right;
+  color      : #257556;
+  text-align : right;
 }
 
 // setando o grid
-.grid{
-  display: grid;
+.grid {
+  display              : grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
-  grid-gap: 40px;
+  grid-template-rows   : auto auto auto;
+  grid-gap             : 40px;
+}
+
+//back to top
+.totop {
+  background-color: #f2f2f2;
+  padding-bottom  : 20%;
+  text-align: center;
+}
+
+.totop a {
+  color          : unset;
+  text-decoration: none;
+}
+
+.btn {
+  border       : 1px solid #15573F;
+  box-sizing   : border-box;
+  border-radius: 25px;
+  padding      : 15px;
+  width        : 100vw;
 }
